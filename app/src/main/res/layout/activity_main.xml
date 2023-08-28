@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingVertical="10dp"
+            >
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ice_back_button"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Settings"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                />
+        </LinearLayout>
+    </Toolbar>
+    <LinearLayout
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="General"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginVertical="15dp"
+
+            />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:strokeWidth="1dp"
+            android:layout_marginTop="10dp"
+            >
+            <ImageButton
+                android:layout_marginTop="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_like"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leave feedback"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hilf uns dabei unsere App zu verbessen"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeWidth="1dp"
+            android:layout_marginTop="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp"
+                >
+
+                <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_vertical"
+                   android:paddingVertical="10dp"
+                   android:orientation="horizontal">
+
+                   <Switch
+                       android:layout_width="50dp"
+                       android:layout_height="wrap_content"
+                       />
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Switch themes"
+                           android:textStyle="bold"
+                           android:textSize="18sp"
+                           />
+
+
+               </LinearLayout>
+                <LinearLayout
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="match_parent" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_cache"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clear cache"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15dp"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="match_parent" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_question"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FAQ"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15dp"
+                        />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_forward"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeWidth="1dp"
+            android:layout_marginTop="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_file"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Data Privacy Terms"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15dp"
+                        />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_forward"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="1dp"
+                    android:background="@color/lightGray"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="match_parent" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_terms"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms and Conditions"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15dp"
+                        />
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_forward"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:strokeWidth="0dp"
+            android:layout_marginTop="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_logout"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/transparent"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sign out"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="15dp"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+</LinearLayout>
